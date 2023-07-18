@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite"  >
+    <listeners>
+        <listener class-name="com.luma.sw5.customlistener.CustomListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="TestSuite" >
+        <classes>
+        <class name="com.luma.sw5.TestSuite.GearPageTest"></class>
+        <class name="com.luma.sw5.TestSuite.MenPageTest"></class>
+        <class name="com.luma.sw5.TestSuite.WomenPagetest"></class>
+        </classes>
+
+    </test>
+</suite>

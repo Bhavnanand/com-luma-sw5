@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite"  >
+    <listeners>
+        <listener class-name="com.luma.sw5.customlistener.CustomListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test <groups name="GearPageTest" ><
+        <classes>
+            <class name="com.luma.sw5.testsuite.LoginPageTest"/>
+        </classes>
+    </test>
+</suite>
